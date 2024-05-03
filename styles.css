@@ -134,8 +134,64 @@ button:hover {
     max-width: 1000px;
     display: flex;
     flex: 1;
-   
-
 }
 
+.card-container {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 60px 0px;
+}
 
+.companion {
+    border: 2px solid black;
+    border-radius: 70px;
+    height: 300px;
+    width: 500px;
+    background-color: rgba(49, 5, 5, 0.514);
+    opacity: 0.7;
+    transition: 0.3s;
+    position: relative;
+}
+
+.card-container img {
+    width: 500px;
+    height: 300px;
+    border-radius: 70px;
+   
+}
+
+.companion:hover {
+    opacity: 1;
+}
+
+.companion {
+    display: flex;
+    align-items: center;
+}
+
+.companion p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    opacity: 0;
+    transition: 0.3s;
+    font-size: 26px;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    box-shadow: 0px 0px 30px 20px;
+    border-radius: 70px;
+    background-color: rgba(0, 0, 0, 0.404);
+}
+
+.companion p:hover {
+    opacity: 1;
+
+}
