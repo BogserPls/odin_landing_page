@@ -1,15 +1,18 @@
 body {
     margin: 0px;
     background-color: rgba(0, 0, 0, 0.39);
+    display: flex;
+    flex: 1;
 }
 
 header {
     background-color: rgba(0, 0, 0, 0.767);
-    height: 300px;
-    margin: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 0px 20px 20px red;
+    flex: 1;
     
 }
 
@@ -17,12 +20,15 @@ i {
     border: 5px black solid;
     border-radius: 50%;
     padding: 8px;
+    transition: 0.1s ease-in-out;
+    margin-bottom: 8px;
+    display: flex;
 }
 
 /* THIS IS TO MAKE THE INSTAGRAM ICON LITTLE LARGER TO HAVE SAME SIZE AS OTHERS, FOR SOME REASON IT DOESNT OTHERWISE */
 
 .fa-brands.fa-instagram {
-    width: 36px;
+    width: 27px;
     display: flex;
     justify-content: center;
     font-weight: bold;
@@ -30,12 +36,67 @@ i {
 
 .contact {
     display: flex;
-    gap: 24px;
-    font-size: 32px;
+    gap: 8px;
+    font-size: 24px;
     flex: 1;
-    margin-right: 16px;
     padding: 8px;
     justify-content: center;
     align-items: center;
+    margin: 16px 0px 0px 0px;
 }
 
+i:hover {
+    color: red;
+    border: 10px solid red;
+    box-shadow: 0px 0px 24px 8px red;
+}
+
+
+.logo img {
+    margin-top: 16px;
+    margin-left: 15px;
+    width: 500px;
+    height: 180px;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 0 0;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0.1 0;
+    justify-content: center;
+    align-items: center;
+    margin: 24px 0px 0px 80px;
+    color: white;
+    font-size: 22px;
+    gap: 16px;
+}
+
+
+button {
+    display: flex;
+    margin: 10px;
+    padding: 8px 24px;
+    font-weight: bold;
+    border: 5px solid black;
+    border-radius: 15px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.123);
+    cursor: pointer;
+    font-size: 24px;
+    transition: 0.1s;
+}
+
+button:hover {
+    color: red;
+    border: 8px solid red;
+    box-shadow: 0px 0px 24px 8px red;
+
+}
